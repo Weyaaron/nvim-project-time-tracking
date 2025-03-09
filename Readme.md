@@ -12,12 +12,14 @@ by using widly used formats like json and (eventually) a
 lua api to extract the relevant data.
 
 The distinct feature of this over other plugins of this
-type is probably that it fokusses on tim-tracking based projects.
-It provides
+type is probably that it fokusses on projects. 
+The goal is to eventually provide both basic and advances 
+features to split the gathered data into projects based 
+on your definition. It could be on time-of-day basis,
+on a git branch basis, or whatever you imagine.
 
 I am aware that other plugins of this type exist and its
 probably personal preference which suits you use case.
-
 
 
 # In Action
@@ -34,7 +36,7 @@ In Lazy, a possible setup might be:
 local lazy = require("lazy")
 local plugin_list = {
     -- Your various other plugins ..
-    {"https://github.com/Weyaaron/nvim-training", pin= true, opts = {}}
+    {"https://github.com/Weyaaron/nvim-project-time-tracking", pin= true, opts = {}}
     -- Support for configuration with opts is included, see below for the options
 }
 lazy.setup(plugin_list)
